@@ -1,10 +1,10 @@
 # Proiect_Catalog_Studentesc
 
 Cuprins:
-  1) Descrierea Aplicatiei/Application Description
-  2) Posibile Metode de Utileizare/Use cases
-  3) Descrierea Bazei de Date/Database Description
-  4) Tehnologii Folosite/Technologies used 
+  1) Descrierea Aplicatiei
+  2) Posibile Metode de Utilizare
+  3) Descrierea Bazei de Date
+  4) Tehnologii Folosite
   5) Features
   6) Securitatea Datelor
 
@@ -37,7 +37,7 @@ Cuprins:
      -Ani universitari
      -etc
     
-3. Descrierea Bazei de Date/Database Description
+3. Descrierea Bazei de Date
   -Aplicatia fososeste o baza de date SQL Server numita "Catalog" si contine urmatoarele tabele:
     1) Cadre cu urmatoarele date: CadreID, Nume, Prenume, Cnp , Parola si flaguri in cazul in care cadrul este decan sau sau sef de departament.
     2) Facultate cu urmatoarele date: FacultateID, Nume, ID-urile decanului si administratorilor ( FKs in Cadre )
