@@ -52,19 +52,19 @@
     1) Libraria iTextSharp
     2) Libraria Microsoft.Office.Interop
     3) Libraria Bunifu_UI_v1.5.3  *pentru interfata grafica*
-  *Aplicatia e scrisa in c#, procedurile stocate din basa de date in T-SQL*
+  - *Aplicatia e scrisa in c#, baza de date contine proceduri stocate in T-SQL*
   
   
   
   
 # 5. Features
   - Studentul poate exporta notele de pe un semestru in format xlsx, pdf sau csv.
-  - Aplicatia este conceputa sa functioneze in diferite tipuri de retele: LAN, MAN, INTRAMAN ,WAN in functie de cerintele si nevoile univesitatii.
+  - Aplicatia este conceputa sa functioneze in diferite tipuri de retele: LAN, MAN, INTRAMAN, WAN; in functie de cerintele si nevoile univesitatii.
   
   
 # 6. Securitatea Datelor
   - Aferent executabilului, in fisierul de configurare al aplicatiei, modul de logare default la baza de date este prin credidentialele Windows ale pc-ului astfel incat studentul poate accesa baza de date doar din interiorul institutiei, dupa ce administratorul bazei de date adauga un user nou.
-  - Parolele de autentificare ale user-ilor sunt criptate cu SHA256 inainte de a fi stocate in baza de date. In momentul adaugarii unui user este generata automat o parola random salvata local intr-un fisier local pe pc-ul adminului care l-a adaugat urmand a-i comunica parola in clar.
+  - Parolele de autentificare ale user-ilor sunt criptate cu SHA256, inainte de a fi stocate in baza de date. In momentul adaugarii unui user, este generata automat o parola random, salvata local intr-un fisier local pe pc-ul adminului care l-a adaugat urmand a-i comunica parola in clar.
  - Securitatea bazei de date este asigurata de tehnologia Microsoft.
  - Logarea in aplicatie nu poate fii exploatata prin SQL Injection.
   
