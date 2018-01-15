@@ -10,23 +10,23 @@ Cuprins:
 
 
 1. Descrierea Aplicatiei
-  -Proiectul a are ca scop crearea unei aplicatii user-friendly ce permite stocarea si vizulaizarea notelor dar si a altor statistici in cadrul unei universitati folosindu-se de o baza de date.
-  -Aplicatia functioneaza diferit pentru tipul utilizatorului ce se logheza. Astfel au fost concepute trei cazuri de functionare a aplicatiei in functie de selectia utilizatorului care se poate loga ca student, cadru al universitatii sau admin pentru o facutate.
-  -Un student sau un cadru are drepturi de read asupra datelor ce il vizeaza in timp ce un admin poate introduce date noi in baza de date.
+  - Proiectul a are ca scop crearea unei aplicatii user-friendly ce permite stocarea si vizulaizarea notelor dar si a altor statistici in cadrul unei universitati folosindu-se de o baza de date.
+  - Aplicatia functioneaza diferit pentru tipul utilizatorului ce se logheza. Astfel au fost concepute trei cazuri de functionare a aplicatiei in functie de selectia utilizatorului care se poate loga ca student, cadru al universitatii sau admin pentru o facutate.
+  - Un student sau un cadru are drepturi de read asupra datelor ce il vizeaza in timp ce un admin poate introduce date noi in baza de date.
 
 2. Posibile Metode de Utilizare
-  -Aplicatia poate fii folosita de o universitate cu diferite facultati, diferite departamente si diferite specializari stocand datele depre grupe, materii, note, studenti diferentiat in functie de anul universitar si anul de facultate al unui student.
-  a) Un student se poate loga in aplicatie pe baza CNP-uli sau si a parolei furnizata de catre administratorul din aplicatie. Dupa ce studentul s-a logat acesta poate sa isi selecteze anulul universitar si sesiunea pentru care doreste sa isi vada datele.
+  - Aplicatia poate fii folosita de o universitate cu diferite facultati, diferite departamente si diferite specializari stocand datele depre grupe, materii, note, studenti diferentiat in functie de anul universitar si anul de facultate al unui student.
+  1) Un student se poate loga in aplicatie pe baza CNP-uli sau si a parolei furnizata de catre administratorul din aplicatie. Dupa ce studentul s-a logat acesta poate sa isi selecteze anulul universitar si sesiunea pentru care doreste sa isi vada datele.
     Pentru un anul si o sesiunea(semestrul) selectat acesta poate vizulaiza materiile cu urmatoarele date aferente materiei:
     -numele profesorilor si asistentilor
     -raportul de puncte si notele pentru curs, laborator, proiect/teme
     -nota finala
     -numarul de credite
     -etc
-  b) Un cadru se autentifica identic si poate selecta an-ul scolar si una din grupele la care preda urmand a i se afisa toate materiile pe care le preda acelei grupe dar si notele studentiilor.
+  2) Un cadru se autentifica identic si poate selecta an-ul scolar si una din grupele la care preda urmand a i se afisa toate materiile pe care le preda acelei grupe dar si notele studentiilor.
      In cazul in care acel cadru este sef de departament poate vizulaiza diferite statistici in cadrul departamentului sau.
      In cazul in care acel cadru este decan poate selecta unul din departamnetele existente si vizualiza acelasi statistici ca seful de departament.
-  c) Adminul din aplicatie este unul din cadre si posibilitatea de a adauga:
+  3) Adminul din aplicatie este unul din cadre si posibilitatea de a adauga:
      -Departamente
      -Specializari
      -Grupe
@@ -55,9 +55,9 @@ Cuprins:
   - .NET Framework: Entity Framework 6.0 
   - SQL SERVER
   - Third Party Libraries
-    a) Libraria iTextSharp
-    b) Libraria Microsoft.Office.Interop
-    c) Libraria Bunifu_UI_v1.5.3  *pentru interfata grafica*
+    1) Libraria iTextSharp
+    2) Libraria Microsoft.Office.Interop
+    3) Libraria Bunifu_UI_v1.5.3  *pentru interfata grafica*
   *Aplicatia e scrisa in c#, procedurile stocate din basa de date in T-SQL*
   
   
