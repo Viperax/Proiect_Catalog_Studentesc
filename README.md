@@ -5,8 +5,8 @@ Cuprins:
   2) Posibile Metode de Utileizare/Use cases
   3) Descrierea Bazei de Date/Database Description
   4) Tehnologii Folosite/Technologies used 
-  5) Caracteristici/Features
-  6) Securitatea Datelor/Data Security
+  5) Features
+  6) Securitatea Datelor
 
 
 1) Descrierea Aplicatiei
@@ -48,10 +48,31 @@ Cuprins:
     7) Grupa cu urmatoarele date: GrupaID, Nume, An( 1,2,3 sau 4) , AnScolarID( FK in AnScoalr) si SpecizareID( FK in Specialiare)
     8) StudentiGrupa *TABELA MANY-TO-MANY CU ID-URILE STUDENTIILOR SI GRUPELOR DEOARECE UN STUDENT POATE APARTINE MAI MULTOR GRUPE CE SUNT DIFERENTIATE PE ANI UNIVERSITARI SI ANI DE FACULTATE IN TIMP CE UN STUDENT ARE DOAR ANUL UNIVERSITAR IN CARE A INCEPUT FAULTATEA*
     9) Materie cu urmatoarele date: MaterieID, Nume, GrupaID (FK in Grupa), 2 profesori si 2 asistenti ( FK in Cadre), procente pentu curs, laborator si proiect, flag examen/colocviu, Credite, Sesiune (semestru) *O materie apartine unei grupe deoarece profesorii pot diferentia de la o grupa la alta si pot avea numar de credite diferit in functie de specializare*
-    10) 
+    10) Note cu urmatoarele date: NotaID, StudentID (FK in Student), NotaCurs, NotaLaborator, NotaProiect, NotaFinala, Sesiune, AnScolaID (FK in AnScolar).
   
   
-  Aplicatia este conceputa sa functioneze in diferite tipuri de retele: LAN, MAN, INTRAMAN ,WAN.
+4) Tehnologii Folosite
+  -.NET Framework: Entity Framework 6.0 
+  - SQL SERVER
+  Third Party Libraries
+    - Libraria iTextSharp
+    - Libraria Microsoft.Office.Interop
+    - Libraria Bunifu_UI_v1.5.3  *pentru interfata grafica*
+  *Aplicatia e scrisa in c#, procedurile stocate din basa de date in T-SQL*
+  
+  
+  
+  
+5)Features
+  -Studentul poate exporta notele de pe un semestru in format xlsx, pdf sau csv.
+  -Aplicatia este conceputa sa functioneze in diferite tipuri de retele: LAN, MAN, INTRAMAN ,WAN in functie de cerintele si nevoile univesitatii.
+  
+  
+ 6)Securitatea Datelor
+  -Aferent executabilului, in fisierul de configurare al aplicatiei, modul de logare default la baza de date este prin credidentialele Windows ale pc-ului astfel incat studentul poate accesa baza de date doar din interiorul institutiei, dupa ce administratorul bazei de date adauga un user nou.
+  -Parolele de autentificare ale user-ilor sunt criptate cu SHA256 inainte de a fi stocate in baza de date. In momentul adaugarii unui user este generata automat o parola random salvata local intr-un fisier local pe pc-ul adminului care l-a adaugat urmand a-i comunica parola in clar.
+ -Securitatea bazei de date este asigurata de tehnologia Microsoft.
+ -Logarea in aplicatie nu poate fii exploatata prin SQL Injection.
   
   
   
