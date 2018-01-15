@@ -1,7 +1,7 @@
 # Proiect_Catalog_Studentesc
 
-Cuprins:
-  1) Descrierea Aplicatiei
+#Cuprins:
+#  1) Descrierea Aplicatiei
   2) Posibile Metode de Utilizare
   3) Descrierea Bazei de Date
   4) Tehnologii Folosite
@@ -9,7 +9,7 @@ Cuprins:
   6) Securitatea Datelor
 
 
-1. Descrierea Aplicatiei
+#1. Descrierea Aplicatiei
   - Proiectul a are ca scop crearea unei aplicatii user-friendly ce permite stocarea si vizulaizarea notelor dar si a altor statistici in cadrul unei universitati folosindu-se de o baza de date.
   - Aplicatia functioneaza diferit pentru tipul utilizatorului ce se logheza. Astfel au fost concepute trei cazuri de functionare a aplicatiei in functie de selectia utilizatorului care se poate loga ca student, cadru al universitatii sau admin pentru o facutate.
   - Un student sau un cadru are drepturi de read asupra datelor ce il vizeaza in timp ce un admin poate introduce date noi in baza de date.
